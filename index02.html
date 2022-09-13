@@ -18,6 +18,13 @@
             else return array;
         }
 
+        function CutArray02(array, n) {
+            if (n === undefined) return [array[0]];
+            else if (n <= 0) return [];
+            else if (n <= array.length) return array.splice(0, n);
+            else return array;
+        }
+
         const result = CutArray([3, 4, 9, 10, 5, 4, 90, 2, 12, 88], 4);
         console.log(result);
     </script>
