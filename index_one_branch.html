@@ -18,8 +18,17 @@
             else return array;
         }
 
-        const result = CutArray([3, 4, 9, 10, 5, 4, 90, 2, 12, 88], 4);
+        function DaoNguocChuoi(str) {
+            var string = str.split("");
+            var arrStr = string.reverse();
+            return arrStr.join("");
+        }
+
+        const result = CutArray([3, 4, 9, 10, 5, 4, 90, 2, 12, 88, 99, 100, 120, 130, 140, 150], 4);
         console.log(result);
+
+        const result02 = DaoNguocChuoi('Hom nay la ngay thu ba trong tuan');
+        console.log(result02);
     </script>
 </body>
 
