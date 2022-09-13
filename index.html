@@ -14,9 +14,23 @@
         // Viết hàm nhận vào 2 số a, b
         // Trả về số gần 100 nhất
         // nearestTo100(89, 180) // 89
-        function nearestTo100(a, b) {
-            // viết code ở đây.
-            return Math.abs(100 - a) < Math.abs(100 - b) ? a : b;
+        function isNguyenTo(n) {
+            if (n <= 1) {
+                return false
+            }
+            let isNguyenTo = true
+
+            for (let i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    return false
+                }
+            }
+
+            return isNguyenTo
+        }
+
+        function arraySort(arr) {
+            return arr.sort((a, b) => a - b);
         }
 
         function arraySort(arr) {
