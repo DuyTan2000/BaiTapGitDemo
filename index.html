@@ -88,6 +88,16 @@
             return max
         }
 
+        const TimMax06 = (array) => {
+            let max = array[0];
+            for (let i = 0; i < array.length; i++) {
+                if (max < array[i]) {
+                    max = array[i]
+                }
+            }
+            return max
+        }
+
         const num = [15, 4, 17, 2, 28, 10, 9];
         const kq = TimMax(num);
         console.log('So lon nhat trong mang la 28', kq);
