@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ON TAP JAVASCRIPT 0NE BRANCH</title>
+    <link rel="stylesheet" href="" />
+</head>
+
+<body>
+    <h1>Bai tap cat chuoi ONE BRANCH</h1>
+    <script>
+        function CutArray(array, n) {
+            if (n === undefined) return [array[0]];
+            else if (n <= 0) return [];
+            else if (n <= array.length) return array.splice(0, n);
+            else return array;
+        }
+
+        const result = CutArray([3, 4, 9, 10, 5, 4, 90, 2, 12, 88], 4);
+        console.log(result);
+    </script>
+</body>
+
+</html>
